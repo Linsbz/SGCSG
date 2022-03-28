@@ -13,12 +13,11 @@
 - páginas
 - endereço
 ```
-## Regras de negócio:
+## Processo de negócio:
 ```
 - agendamento de postagens (disponibilidade de data e hora)
 - enquetes (estar cadastrado e não ter votado anteriormente naquela enquete)
-- permissão de usuários
-- validação dos eventos (data, local)
+- criação dos eventos (disponibilidade de local no site)
 - alteração de tema (paletas de cores, "premium")
-- validação de formulário (se está disponível para respostas e se já foi respondido)
+- criação de formulário (limite por usuário)
 ```
