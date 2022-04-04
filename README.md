@@ -1,23 +1,19 @@
-# Sistema de Gerenciamento de Conteúdo para Sites Genéricos
+# Sistema de Gerenciamento de Conteúdo para Sites Genéricos - SGCSG
 ## Cadastros:
 ```
-- usuários
-- notícias
-- categorias de notícias
-- anúncios
-- áreas de anúncios
-- enquete
-- formulários p/ respostas
-- eventos
-- templates/temas
-- páginas
-- endereço
+- usuário (tipos: comum, redator, administrador)
+- notícia
+- anúncio
+- área de anúncio
+- enquete e opção de voto
+- formulário e campo de formulário
+- tema
 ```
 ## Processo de negócio:
 ```
-- agendamento de postagens (disponibilidade de data e hora)
-- enquetes (estar cadastrado e não ter votado anteriormente naquela enquete)
-- criação dos eventos (disponibilidade de local no site)
-- alteração de tema (paletas de cores, "premium")
-- criação de formulário (limite por usuário)
+- postagem de anúncio
+- postagem de notícia
+- voto
+- resposta de formulário
+- compra de tema
 ```
