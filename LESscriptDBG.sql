@@ -36,6 +36,8 @@ CREATE TABLE noticia(
 	texto TEXT NOT NULL,
 	imagem VARCHAR(30) NOT NULL,
 	destaque BOOLEAN NOT NULL,
+	
+	usuario INTEGER NOT NULL
 
 	CONSTRAINT pk_noticia PRIMARY KEY(id),
 
@@ -47,6 +49,9 @@ CREATE TABLE postagem_noticia(
 	id INTEGER NOT NULL,
 	data_inicio 	DATE 		NOT NULL,
 	data_fim 	DATE 		NOT NULL,
+
+	noticia INTEGER NULL,
+	usuario INTEGER NULL
 
 	CONSTRAINT pk_postagem_noticia PRIMARY KEY(id),
 
