@@ -8,8 +8,6 @@ CREATE TABLE usuario (
 	
 	CONSTRAINT pk_usuario	PRIMARY KEY(ID),
 
-	CORRIGIR!!
-
 	CONSTRAINT ck_tipo CHECK (tipo IN(1,2,3))
 );
 
@@ -39,7 +37,9 @@ CREATE TABLE noticia(
 	imagem VARCHAR(30) NOT NULL,
 	destaque BOOLEAN NOT NULL,
 
-	CONSTRAINT pk_noticia PRIMARY KEY(id)
+	CONSTRAINT pk_noticia PRIMARY KEY(id),
+
+	CONSTRAINT fk_noticia_usuario FOREIGN KEY(usuario) REFERENCES usuario(id)
 
 );
 
