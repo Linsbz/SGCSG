@@ -134,7 +134,7 @@ CREATE TABLE
         formulario_id INTEGER NOT NULL,
         usuario_id INTEGER NOT NULL,
         CONSTRAINT pk_resposta_formulario PRIMARY KEY (id),
-        CONSTRAINT fk_resposta_formulario_formulario FOREIGN KEY (formulario_id) REFERENCES formulari(id),
+        CONSTRAINT fk_resposta_formulario_formulario FOREIGN KEY (formulario_id) REFERENCES formulario(id),
         CONSTRAINT fk_resposta_formulario_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id)
     );
 
@@ -157,6 +157,6 @@ CREATE TABLE
         resposta_formulario_id INTEGER NOT NULL,
         campo_formulario_id INTEGER NOT NULL,
         CONSTRAINT pk_resposta_campo PRIMARY KEY(id),
-        CONSTRAINT fk_resposta_campo_resposta_formulario FOREIGN KEY(resposta_formulario_id) REFERENCES respota_formulario(id),
+        CONSTRAINT fk_resposta_campo_resposta_formulario FOREIGN KEY(resposta_formulario_id) REFERENCES resposta_formulario(id),
         CONSTRAINT fk_resposta_campo_campo FOREIGN KEY(campo_formulario_id) REFERENCES campo_formulario(id)
     );
